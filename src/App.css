@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.app {
+    padding: 16px 32px;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color:#333538;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    padding: 16px 32px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ranking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 800px;
 }
 
-.App-link {
-  color: #61dafb;
+.searchName {
+    display: flex;
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input.search{
+    width: 600px;
+    height: 50px;
+    background: #E5E5E5;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #333538;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+  
+input.search::-webkit-input-placeholder {
+    color: #333538;
+}
+   
+input.search:-moz-placeholder { /* Firefox 18- */
+    color: #333538;  
+}
+   
+input.search::-moz-placeholder {  /* Firefox 19+ */
+    color: #333538;  
+}
+   
+input.search:-ms-input-placeholder {  
+    color: #333538;  
+}
+  
+.icon {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    z-index: 1;
+    color: #333538;
+}
+  
+input.search:focus, input#search:active {
+      outline:none; 
 }
